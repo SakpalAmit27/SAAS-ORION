@@ -1,6 +1,7 @@
 import { MaxWidthWrapper } from "./components/max-width-wrapper";
 import Heading from "./components/heading";
 import {Check} from "lucide-react"
+import ShinyButton from "./components/shiny-button";
 
 const page = () => {
   return <>
@@ -20,10 +21,13 @@ const page = () => {
         <ul className="space-y-2 text-base/7 text-gray-600 text-left flex flex-col items-start">
         {["Real-time Discord alerts for critical events","buy once, use forever","Track sales ,new users, or any other event",].map((item,index)=>(
           <li key={index} className="flex gap-1.5 items-center text-left">
-            <Check className="size-5 shrink-0"/>
+            <Check className="size-5 shrink-0 text-brand-700"/>
             {item}</li>
         ))}
         </ul>
+        <div className="w-full max-w-80 ">
+          <ShinyButton>Get Started</ShinyButton>
+        </div>
       </div>
     </MaxWidthWrapper>
   </section>
