@@ -11,7 +11,8 @@ const config: Config = {
     extend: {
       fontFamily: {
         heading: ["var(--font-heading)", ...fontFamily.sans],
-        customfont:['customfont'],
+        custom:['custom'],
+        logo:['logo'],
       },
      
       colors: {

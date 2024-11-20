@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'custom';
+    src: url('/assets/font/custom.ttf') format('truetype');
+
+}
+
 @font-face{
-    font-family:'customfont';
-    src: url('/public/assets/font/customfont.ttf');
+    font-family:'logo';
+    src: url('/assets/font/logo.otf') format('truetype');
 }

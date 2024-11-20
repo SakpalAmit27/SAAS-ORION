@@ -1,11 +1,17 @@
+import Link from "next/link"
+import { MaxWidthWrapper } from "./max-width-wrapper"
 
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="sticky z-[100] h-16 inset-x-0 top-0 w-full border-b border-gray-200 bg-white backdrop-blur-lg transition-all bg-white/80">
-
+        <MaxWidthWrapper>
+            <div className="flex h-16 items-center justify-between">
+                <Link href='/' className="flex z-40 font-logo text-5xl">orion</Link>
+            </div>
+        </MaxWidthWrapper>
     </nav>
   )
 }
 
-export default navbar
+export default Navbar
