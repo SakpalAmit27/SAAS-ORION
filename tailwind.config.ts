@@ -13,6 +13,7 @@ const config: Config = {
         heading: ["var(--font-heading)", ...fontFamily.sans],
         custom:['custom'],
         logo:['logo'],
+        headingfont:['headingfont'],
       },
      
       colors: {

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'custom';
-    src: url('/assets/font/custom.ttf') format('truetype');
+    font-family: 'headingfont';
+    src: url('/assets/font/raleway.bold.ttf') format('truetype');
 
 }
 
