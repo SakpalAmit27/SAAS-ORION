@@ -1,15 +1,15 @@
-import { MaxWidthWrapper } from "./components/max-width-wrapper";
-import Heading from "./components/heading";
+import { MaxWidthWrapper } from "@/app/components/max-width-wrapper";
+import Heading from "@/app/components/heading";
 import {Check} from "lucide-react"
-import ShinyButton from "./components/shiny-button";
+import ShinyButton from "@/app/components/shiny-button";
 
-import Navbar from "./components/navbar";
+import Navbar from "../components/navbar";
 
 const page = () => {
   return <>
 
   
-  <Navbar/>
+
   <section className="relative py-24 sm:py-32 bg-brand-25">
     {/* creating a custom max with wrapper component to reuse later on*/}
     <MaxWidthWrapper className="text-center">
