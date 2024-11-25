@@ -17,7 +17,7 @@ const Navbar = () => {
                   {user ? <>
                   
                   <SignOutButton>
-                    <button className={}></button>
+                    <button className=""></button>
                   </SignOutButton>
                   </> : null}
 

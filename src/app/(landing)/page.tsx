@@ -1,9 +1,9 @@
-import { MaxWidthWrapper } from "@/app/components/max-width-wrapper";
-import Heading from "@/app/components/heading";
+import { MaxWidthWrapper } from "@/components/max-width-wrapper";
+import Heading from "@/components/heading";
 import {Check} from "lucide-react"
-import ShinyButton from "@/app/components/shiny-button";
+import ShinyButton from "@/components/shiny-button";
 
-import Navbar from "../components/navbar";
+import Navbar from "../../components/navbar";
 
 const page = () => {
   return <>
