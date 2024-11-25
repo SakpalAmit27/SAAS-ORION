@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 const Navbar = () => {
 
-  const user = true
+  const user = false
 
 
   return (
@@ -19,14 +19,41 @@ const Navbar = () => {
                   {user ? <>
                   
                   <SignOutButton>
-                    <Button>Sign Out</Button>
+                    <Button size="sm" variant="ghost">Sign Out</Button>
                   </SignOutButton>
 
                   <Link href='/dashboard' className={buttonVariants({
                     size:"sm",
-                    className:"sm:flex items-center hidden gap-1"
+                    className:"flex items-center gap-1"
                   })}>Dashboard <ArrowRight className="ml-1.5 size-4"/></Link>
-                  </> : null}
+                  </> : 
+                  <>
+
+                  
+                  <Link href='/pricing' className={buttonVariants({
+                    size:"sm",
+                    variant:'ghost',
+                  })}>Pricing</Link>
+
+                       
+                  <Link href='/sign-in' className={buttonVariants({
+                    size:"sm",
+                    variant:'outline',
+               
+                  })}>Sign in</Link>
+
+
+                    <Link href='/sign-up' className={buttonVariants({
+                    size:"sm",
+                    className:'bg-zinc-900 text-white flex items-center gap-1.5'
+                  })}>Sign Up <ArrowRight className="size-4"/></Link>
+                  
+                  
+                  
+                  
+                  </>
+                  
+                 }
 
                 </div>
             </div>
