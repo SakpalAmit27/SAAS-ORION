@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { MaxWidthWrapper } from "./max-width-wrapper"
 import {SignOutButton} from "@clerk/nextjs"
-import { Button } from "./ui/button"
+import { Button, buttonVariants } from "./ui/button"
 
 const Navbar = () => {
 
@@ -20,6 +20,8 @@ const Navbar = () => {
                   <SignOutButton>
                     <Button>Sign Out</Button>
                   </SignOutButton>
+
+                  <Link href='/dashboard' className={buttonVariants({})}>Dashboard</Link>
                   </> : null}
 
                 </div>
