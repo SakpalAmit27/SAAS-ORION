@@ -41,7 +41,9 @@ const page = () => {
   <div className="relative mx-auto">
     <MaxWidthWrapper className="relative">
 
-      <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4"></div>
+      <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+      <MockDiscordUI></MockDiscordUI>
+      </div>
 
     </MaxWidthWrapper>
   </div>
