@@ -42,6 +42,8 @@ const Navbar = () => {
                
                   })}>Sign in</Link>
 
+                  <div className="h-8 w-px bg-zinc-200"/>
+
 
                     <Link href='/sign-up' className={buttonVariants({
                     size:"sm",
