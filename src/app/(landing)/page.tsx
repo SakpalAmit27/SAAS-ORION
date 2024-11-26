@@ -2,6 +2,7 @@ import { MaxWidthWrapper } from "@/components/max-width-wrapper";
 import Heading from "@/components/heading";
 import {Check} from "lucide-react"
 import ShinyButton from "@/components/shiny-button";
+import { MockDiscordUI } from "@/components/mock-discord";
 
 import Navbar from "../../components/navbar";
 
