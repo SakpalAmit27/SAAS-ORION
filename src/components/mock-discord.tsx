@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Icons } from "./icons";
+import { PlusCircle } from "lucide-react";
 
 
 export const MockDiscordUI = ({children} : {children:ReactNode}) => {
@@ -18,6 +19,9 @@ export const MockDiscordUI = ({children} : {children:ReactNode}) => {
                 <span className="text-lg font-semibold text-gray-400">{String.fromCharCode(65+i)}</span>
             </div>
         ))}
+            <div className=" group size-12 bg-discord-background rounded-3xl flex items-center justify-center mb-3 hover:rounded-xl transition-all duration-200 hover:bg-[#3ba55c] cursor-not-allowed">
+                <span className="text-lg font-semibold text-gray-400"><PlusCircle className="text-[#3ba55c] group-hover:text-white"/></span>
+            </div>
         </div>
     </div>
 }
