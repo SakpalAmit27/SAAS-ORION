@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Icons } from "./icons";
-import { PlusCircle } from "lucide-react";
+import { PlusCircle, UserCircle } from "lucide-react";
 
 
 export const MockDiscordUI = ({children} : {children:ReactNode}) => {
@@ -30,6 +30,15 @@ export const MockDiscordUI = ({children} : {children:ReactNode}) => {
             <div className="px-4 h-16 border-b border-[#202225] flex items-center shadow-sm">
                 <div className="w-full bg-[#202225] text-sm rounded px-2 h-8 items-center flex justify-center text-gray-500 cursor-not-allowed">
                     Find or start a conversation
+                </div>
+            </div>
+
+            <div className="flex-1 overflow-y-auto">
+                <div className="px-2 mb-4"> 
+                    <div className="flex items-center text-sm px-2 py-1.5 rounded hover:bg-[#393c43] text-[#dcddde] cursor-not-allowed">
+                        <UserCircle className="mr-4 size-8 text-[#b9bbbe]"/>
+                        <span className="font-medium text-sm">Friends</span>
+                    </div>
                 </div>
             </div>
         </div>
